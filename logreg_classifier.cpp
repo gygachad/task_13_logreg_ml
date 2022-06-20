@@ -14,7 +14,7 @@ bool LogregClassifier::read_features(std::istream& stream, BinaryClassifier::fea
     std::istringstream linestream{ line };
 
     float value;
-    while (linestream, linestream >> value) {
+    while (linestream >> value) {
         features.push_back(value);
     }
     return stream.good();

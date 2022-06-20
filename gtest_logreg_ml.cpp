@@ -17,8 +17,8 @@ public:
     void TearDown() { /* called after every test */ }
 
 protected:
-    std::ifstream coef_stream{ "..\\logreg_coef.txt" };
-    std::ifstream data_stream{ "..\\test_data_logreg.txt" };
+    std::ifstream coef_stream{ "../logreg_coef.txt" };
+    std::ifstream data_stream{ "../test_data_logreg.txt" };
 };
 
 TEST_F(LogregClassifierTest, main_test)
